@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+}
+
+video {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+
+.banner {
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    
+  }
+
+.banner::after {
+    content: ""; 
+    position: absolute;
+    top: 65%;
+    z-index: 1;
+  
+    transform: skewY(3deg)
+               translateY(92%);
+    width: 100%;
+    height: 25%;
+    background-color: #fff;
+}
+
+.banner::before {
+content: ""; 
+position: absolute;
+top: -21%;
+z-index: 1;
+
+transform: skewY(0deg)
+            translateY(100%);
+width: 100%;
+height: 20%;
+background-color: #ffffff;
+}
+
+.overlay::after {
+content: ""; 
+position: absolute;
+top: -49%;
+z-index: 1;
+
+transform: skewY(3deg)
+            translateY(92%);
+width: 100%;
+height: 63%;
+background-color: rgba(0,0,0,0.7);
+}
+
+.overlay {
+position: absolute;
+width: 100%;
+height: 100%;
+overflow: hidden;
+display: flex; 
+}
+
+.title {
+position: absolute;
+text-align: center;
+width: 100%;
+top: 20%;
+font-size: 30px;
+line-height: 1.5;
+font-weight: 700;
+-webkit-text-fill-color: #ffffff;
+background-color: inherit;
+background-clip: inherit;
+}
+
+p {
+color: #ffffff;
+font-size: 20px;
+line-height: 1.2;
+font-weight: 300;
+}
+
+.content {
+position: absolute;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 2;
+}
+
+.contentimg {
+margin-right: 20px;
+}
+
+.contentp {
+margin-top: 10px;
+}
+
+.contenta {
+margin-left: 25px;
+margin-right: 25px;
+display: flex;
+}
+
+@media screen and (max-width: 815px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .banner {
+        height: 85vh;
+    }
+
+    .overlay::after {
+        height: 68%;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .title {
+        font-size: 20px;
+        line-height: 1;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 1;
+        font-weight: 150;
+    }
+
+}
+
+@media screen and (max-width: 284px) {
+    .title {
+        font-size: 10px;
+        line-height: 1;
+        font-weight: 300;
+    }
+
+    p {
+        font-size: 12px;
+        line-height: 1;
+        font-weight: 75;
+    }
+}
