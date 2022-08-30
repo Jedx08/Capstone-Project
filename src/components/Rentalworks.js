@@ -4,7 +4,7 @@ import divBg from '../media/rentalworks.mp4';
 
 const Rentalworks = () => {
   return (
-    <div className='main'>
+    <div className='mainjd'>
       <div className='overlay'></div>
       <div>
       <div className='banner'><video src={divBg} autoPlay loop muted /></div>

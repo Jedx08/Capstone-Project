@@ -12,7 +12,7 @@ const Ourbenefits = () => {
         <em>Luxury RentCar Rental Services</em>
       <Row className='mt-5 justify-content-md-between'>
         <Col sm lg="3">
-            <img src='https://autostar.templines.org/wp-content/uploads/2018/12/as001.jpg' />
+            <img src='https://autostar.templines.org/wp-content/uploads/2018/12/as001.jpg'/>
             <h5>Our Customers Always</h5>
             <h5>100% Satisfied</h5>
             <div className='p-2'><img style={{height: "15px"}} src='https://snipboard.io/NRTeph.jpg'/></div>
